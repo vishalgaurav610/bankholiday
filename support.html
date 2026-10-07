@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f7f7" />
+    <title>Support | Bank Holiday India</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #14232c;
+        --muted: #52636a;
+        --line: #d8e1e2;
+        --paper: #f4f7f7;
+        --white: #ffffff;
+        --green: #087f68;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.6;
+      }
+
+      a { color: var(--green); }
+
+      .topbar {
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .topbar-inner,
+      main,
+      footer {
+        width: min(100% - 40px, 920px);
+        margin: 0 auto;
+      }
+
+      .topbar-inner {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .app-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+      }
+
+      .brand {
+        color: var(--ink);
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      main { padding: 68px 0 56px; }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+
+      h1, h2, p { margin-top: 0; }
+
+      h1 {
+        max-width: 700px;
+        margin-bottom: 12px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+
+      .intro {
+        max-width: 620px;
+        margin-bottom: 28px;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        padding: 0 18px;
+        border-radius: 5px;
+        background: var(--green);
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .contact-link:hover { background: #066b58; }
+
+      .contact-note {
+        margin: 12px 0 48px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .faq-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        padding-bottom: 14px;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      h2 {
+        margin-bottom: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      .faq-count {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      details { border-bottom: 1px solid var(--line); }
+
+      summary {
+        display: flex;
+        min-height: 62px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker { display: none; }
+      summary::after { color: var(--green); content: "+"; font-size: 22px; }
+      details[open] summary::after { content: "−"; }
+
+      details p {
+        max-width: 760px;
+        margin: -2px 34px 18px 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 0 30px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      footer a { white-space: nowrap; }
+
+      @media (max-width: 600px) {
+        .topbar-inner, main, footer { width: min(100% - 32px, 920px); }
+        main { padding: 48px 0 42px; }
+        h1 { font-size: 39px; }
+        .intro { font-size: 16px; }
+        .contact-note { margin-bottom: 38px; }
+        footer { flex-direction: column; gap: 8px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <img
+          class="app-icon"
+          src="ios/BankHolidayIndia/Images.xcassets/AppIcon.appiconset/AppIcon-60@2x.png"
+          alt=""
+        />
+        <a class="brand" href="index.html">Bank Holiday India</a>
+      </div>
+    </header>
+
+    <main>
+      <p class="eyebrow">Support</p>
+      <h1>How can we help?</h1>
+      <p class="intro">For help with Bank Holiday India, send us an email and include your device model and iOS version if you can.</p>
+      <a class="contact-link" href="mailto:vishalgaurav610@gmail.com?subject=Bank%20Holiday%20India%20Support">Email support</a>
+      <p class="contact-note">We usually reply by email.</p>
+
+      <section aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <h2 id="faq-title">Common questions</h2>
+          <span class="faq-count">Bank Holiday India</span>
+        </div>
+
+        <details>
+          <summary>Where does the holiday information come from?</summary>
+          <p>Holiday entries are compiled from the Indian Bank annual holiday circular. The catalog is reviewed and published manually after a new circular becomes available, so updates are not automatic.</p>
+        </details>
+        <details>
+          <summary>Why might a date differ from another calendar?</summary>
+          <p>Holiday schedules can vary by state and institution, and published information may change. Please confirm important dates with your bank or the relevant official notice.</p>
+        </details>
+        <details>
+          <summary>How do I change the state or year?</summary>
+          <p>Open Settings in the app and choose the state and year you want to view.</p>
+        </details>
+        <details>
+          <summary>Why aren’t holiday reminders appearing?</summary>
+          <p>Turn on Holiday notifications in Settings and allow notifications for Bank Holiday India in your device settings. Reminders are scheduled on your device and may be delayed by system or battery settings.</p>
+        </details>
+        <details>
+          <summary>How do I add a holiday to my calendar?</summary>
+          <p>Open a holiday’s details and choose Add to calendar. Allow calendar access when prompted.</p>
+        </details>
+        <details>
+          <summary>Holiday information isn’t loading. What should I try?</summary>
+          <p>Check your internet connection and try again. If the problem continues, contact support with the year you selected and the error message shown in the app.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <span>Bank Holiday India · Support</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
